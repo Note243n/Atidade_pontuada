@@ -1,14 +1,50 @@
 import os
+os.system('clear') # LIMPANDO O TERMINAL
+
+# SOLICITANDO DADOS
+
+nome = input('Informe seu nome: ').strip()
 os.system('clear')
 
-nome = str(input('Informe o seu nome: '))
-sexo = int(input('imforme o seu sexo, 1 para feminino 2 para masculino \n > '))
-estadoC = int(input('informe o seu estado civil, 1 para Casado(a) 2 para Solteiro(a) \n > '))
+sexo = input('informe seu sexo (MASCULINO/FEMININO): ').strip().upper()
 
-if sexo == 1 and estadoC == 1:
-   tempoC = int(input('Informe o tempo de casado(a)'))
-   print(f'Seu nome é {nome} \n Seu sexo é {sexo} \n Seu estado civil é {estadoC} \n Seu tempo de casado é {tempoC} ')
+os.system('clear')
 
+estado_civil = input ('Informe seu estado civil: ').strip().upper()
 
+os.system('clear')
 
+# IMPRIMINDO RESULTADO 
 
+if sexo == "FEMININO" and estado_civil == "CASADA"  :
+    tempo_casados = input('Digite o tempo de casado(a) (anos): ')
+    os.system('clear')
+
+    print('\nDados do usuário:\n')
+    print(f'Seu nome é {nome} ')
+    print(f'Seu sexo é {sexo} ')
+    print(f'Seu  estado civil é {estado_civil}(A)')
+    print(f'Seu tempo de casada é {tempo_casados} anos')
+
+elif sexo == 'FEMININO' and estado_civil == 'SOLTEIRO' or 'SOLTEIRA' :
+    print('\nDados do usuário:\n')
+    print(f'Seu nome é {nome} ')
+    print(f'Seu sexo é {sexo} ')
+    print(f'Seu  estado civil é {estado_civil}(A)')
+
+elif sexo == 'MASCULINO' and estado_civil == 'CASADO' :
+    print('\nDados do usuário:\n')
+    print(f'Seu nome é {nome} ')
+    print(f'Seu sexo é {sexo} ')
+    print(f'Seu  estado civil é {estado_civil}(A)')
+
+elif sexo == 'MASCULINO' and estado_civil == 'SOLTEIRO' :
+    print('\nDados do usuário:\n')
+    print(f'Seu nome é {nome} ')
+    print(f'Seu sexo é {sexo} ')
+    print(f'Seu  estado civil é {estado_civil}(A)')
+
+else:
+     print('Não há informações adicionais.')
+
+# FIM DO PROGRAMA
