@@ -1,12 +1,18 @@
 import os
-os.system('clear')
+os.system('clear') # LIMPANDO O TERMINAL
 
-v1 = int(input('Informe um valor: '))
-v2 = int(input('Informe outro valor: '))
-s = v1 + v2
-m = v1 * v2
+# SOLICITANDO DADOS 
 
-if v1 == v2:
-    print(f'Os valores {v1} e {v2} são iguai portanto eles foram somados o resultado foi \n > {s} ')
+a = int (input('Informe um valor: '))
+b = int (input('Informe o segundo valor: '))
+s = a + b
+m = a * b
+
+# IMPRIMINDO RESULTADO 
+
+if a == b :
+    print(f'O valor {a} e o valor {b} são iguais portanto eles passaram a ser somados dando um resultado de {s} ')
 else :
-    print(f'Os valores {v1} e {v2} foram diferentes portanto foram multiplicados o resultado foi \n > {m}')
+    print(f'O valor {a} e o valor {b} são diferentes portanto eles passaram a ser multiplicados dando um resultado de {m} ')
+
+# FIM DO PROGRAMA
