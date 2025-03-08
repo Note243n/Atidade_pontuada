@@ -1,24 +1,28 @@
-import os
+import os 
+os.system('clear') # LIMPANDO O TERMINAL
+
+# SOLICITANDO DADOS
+
+a = int(input('Digite o primeiro valor: '))
 os.system('clear')
 
-A = int(input('Digite um numero: '))
-B = int(input('Digite um segundo numero: '))
-C = int(input('Digite um terceiro numero: '))
-s = A + B
+b = int(input('Digite o segundo valor: '))
 os.system('clear')
 
+c = int(input('Digite o terceiro valor: '))
+os.system('clear')
 
+s = a + b
 
+# IMPRIMINDO RESULTADO
 
-   
+if s > c :
+    print(f' A soma dos números {a} + {b} é maior que {c}\n')
 
-if s > C:
-    print(f' O numero {A} + {B} Somados é maior que {C}')
+elif s == c :
+    print(f'A soma dos números {a} + {b} é igual a {c} \n')
 
-elif s == C:
-    print(f'O numero {A} + {B} somados é igual a {C}')
+else:
+    print(f' A soma dos números {a} + {b} é menor que {c}\n')
 
-else :
-    print(f' O numero {A} + {B} somados é menor que {C}')
-
-print()
+# FIM DO PROGRAMA
