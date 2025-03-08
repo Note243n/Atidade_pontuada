@@ -1,34 +1,39 @@
-import os
-os.system('clear')
+import os 
+os.system('clear') # LIMPANDO O TERMINAL 
 
-kmo = int(input('Informe quantos Kg de Morango você deseja levar: '))
-km = int(input('Informe quantos Kg de Maça você deseja levar: '))
+# VARIÁVEIS
 
+preco_morango_ate_5kg = 2.50
+preco_morango_acima_5kg = 2.20
+preco_maca_ate_5kg = 1.80
+preco_maca_acima_5kg = 1.50
 
-if kmo <= 5:
-    preco_morango = 2.50
+# SOLICITANDO DADOS 
+
+quantidade_morango = float(input('Informe a quantidade de morangos (em kg): '))
+
+quantidade_maca = float(input('Informe a quantidade de maçãs (em kg): '))
+
+# IMPRIMINDO RESULTADO
+
+if quantidade_morango <= 5:
+   preco_morango = quantidade_morango * preco_morango_ate_5kg
+
 else:
-    preco_morango = 2.20
-print(f'Quantidade total a ser paga é de {kmo}')
-    
+    preco_morango = quantidade_morango * preco_morango_acima_5kg
 
-if km <= 5:
-    preco_maca = 1.80
+if quantidade_maca <= 5:
+    preco_maca = quantidade_maca * preco_maca_ate_5kg
 else:
-    preco_maca = 1.50
+    preco_maca = quantidade_maca * preco_maca_acima_5kg
 
-total_compra = preco_maca + preco_morango
-if total_compra > 50 or kmo + km > 8:
-   total_compra *= 0.9
+total_compra = preco_morango + preco_maca
 
-
-print(f'O valor a ser pago é de R${total_compra:.2f} ')
-print(f'Quantidade de morangos em Kg {kmo}')
-print(f'Quantidade de maças em Kg {km}')
+if quantidade_morango + quantidade_maca >= 10 or total_compra >= 15:
+    total_compra *= 0.9
 
 
+print(f'O total da compra é R${total_compra:.2f}')
 
-
-
-
+# FIM DO PROGRAMA
 
