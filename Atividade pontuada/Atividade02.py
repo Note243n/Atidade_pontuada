@@ -26,13 +26,13 @@ if sexo == "FEMININO" and estado_civil == "CASADA"  :
     print(f'Seu  estado civil é {estado_civil}(A)')
     print(f'Seu tempo de casada é {tempo_casados} anos')
 
-elif sexo == 'FEMININO' and estado_civil == 'SOLTEIRO' or 'SOLTEIRA' :
+elif sexo == 'FEMININO' and estado_civil == 'SOLTEIRO' :
     print('\nDados do usuário:\n')
     print(f'Seu nome é {nome} ')
     print(f'Seu sexo é {sexo} ')
     print(f'Seu  estado civil é {estado_civil}(A)')
 
-elif sexo == 'MASCULINO' and estado_civil == 'CASADO' :
+elif sexo == 'MASCULINO' and estado_civil == 'CASADO' or 'CASADA' :
     print('\nDados do usuário:\n')
     print(f'Seu nome é {nome} ')
     print(f'Seu sexo é {sexo} ')
